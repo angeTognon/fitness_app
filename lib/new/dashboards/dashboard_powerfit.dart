@@ -85,7 +85,7 @@ class _DashboardPowerfitState extends State<DashboardPowerfit> {
   TextEditingController codEquipement = TextEditingController();
   getUserData() async {
     var url =
-        "https://zoutechhub.com/pharmaRh/fitness_app/getUserData.php?email=$user_email";
+        "https://zoutechhub.com/pharmaRh/gofitnext/getUserData.php?email=$user_email";
     var response = await http.get(Uri.parse(url));
     var pub = await json.decode(response.body);
     print(response.body);
@@ -98,7 +98,7 @@ class _DashboardPowerfitState extends State<DashboardPowerfit> {
     setState(() {
       show = true;
     });
-    var url = "https://zoutechhub.com/pharmaRh/fitness_app/updateCode.php?id=$id&idApp=$idApp";
+    var url = "https://zoutechhub.com/pharmaRh/gofitnext/updateCode.php?id=$id&idApp=$idApp";
     var response = await http.post(Uri.parse(url));
 
     if (response.body == "OK") {

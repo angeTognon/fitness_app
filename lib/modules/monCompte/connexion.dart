@@ -33,7 +33,7 @@ class _ConnexionState extends State<Connexion> {
     });
     //print("coucou");
 
-    var url = "https://zoutechhub.com/pharmaRh/fitness_app/connexion.php";
+    var url = "https://zoutechhub.com/pharmaRh/gofitnext/connexion.php";
     var response = await http.post(Uri.parse(url),
         body: {'mail': emailController.text, 'mp': mpController.text});
 

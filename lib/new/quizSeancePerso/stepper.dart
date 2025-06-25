@@ -50,7 +50,7 @@ class _StepperFormState extends State<StepperForm> {
 
     try {
       final response = await http.get(
-          Uri.parse('https://zoutechhub.com/pharmaRh/fitness_app/updateSeancePersoStepper.php')
+          Uri.parse('https://zoutechhub.com/pharmaRh/gofitnext/updateSeancePersoStepper.php')
               .replace(queryParameters: {
             'mail': user_email,
             'programme': selectedProgram ?? '',

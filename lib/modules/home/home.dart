@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
   TextEditingController codEquipement = TextEditingController();
   getUserData() async {
     var url =
-        "https://zoutechhub.com/pharmaRh/fitness_app/getUserData.php?email=$user_email";
+        "https://zoutechhub.com/pharmaRh/gofitnext/getUserData.php?email=$user_email";
     var response = await http.get(Uri.parse(url));
     var pub = await json.decode(response.body);
     print(response.body);
@@ -51,7 +51,7 @@ class _HomeState extends State<Home> {
     setState(() {
       show = true;
     });
-    var url = "https://zoutechhub.com/pharmaRh/fitness_app/updateCode.php?id=$id&idApp=$idApp";
+    var url = "https://zoutechhub.com/pharmaRh/gofitnext/updateCode.php?id=$id&idApp=$idApp";
     var response = await http.post(Uri.parse(url));
 
     if (response.body == "OK") {
@@ -204,7 +204,7 @@ class _HomeState extends State<Home> {
 
   Future<Map<String, dynamic>> getPowerBandData() async {
     try {
-      var url = "https://zoutechhub.com/pharmaRh/fitness_app/getPowerBandData.php?email=$user_email";
+      var url = "https://zoutechhub.com/pharmaRh/gofitnext/getPowerBandData.php?email=$user_email";
       var response = await http.get(Uri.parse(url));
 
       print('PowerBand API Response: ${response.body}'); // Ajout pour débogage
@@ -221,7 +221,7 @@ class _HomeState extends State<Home> {
   }
   Future<Map<String, dynamic>> getStepperData() async {
     try {
-      var url = "https://zoutechhub.com/pharmaRh/fitness_app/getStepperData.php?email=$user_email";
+      var url = "https://zoutechhub.com/pharmaRh/gofitnext/getStepperData.php?email=$user_email";
       var response = await http.get(Uri.parse(url));
 
       print('PowerBand API Response: ${response.body}'); // Ajout pour débogage
@@ -237,7 +237,7 @@ class _HomeState extends State<Home> {
     }
   }Future<Map<String, dynamic>> getPowerFitData() async {
     try {
-      var url = "https://zoutechhub.com/pharmaRh/fitness_app/getPowerFitData.php?email=$user_email";
+      var url = "https://zoutechhub.com/pharmaRh/gofitnext/getPowerFitData.php?email=$user_email";
       var response = await http.get(Uri.parse(url));
 
       print('PowerBand API Response: ${response.body}'); // Ajout pour débogage

@@ -52,7 +52,7 @@ class _PowerbandsFormState extends State<PowerbandsForm> {
 
     try {
       final response = await http.get(
-          Uri.parse('https://zoutechhub.com/pharmaRh/fitness_app/updateSeancePersoPowerBand.php')
+          Uri.parse('https://zoutechhub.com/pharmaRh/gofitnext/updateSeancePersoPowerBand.php')
               .replace(queryParameters: {
             'mail': user_email,
             'programme': selectedProgram ?? '',

@@ -60,7 +60,7 @@ class _I12State extends State<I12> {
     setState(() {
       show = true;
     });
-    var url = "https://zoutechhub.com/pharmaRh/fitness_app/updateSeancePerso.php?id=$id&motivation=${widget.motivation}&sexe=${widget.sexe}&objectifPrincipal=${widget.objectif}&morphologieSouhaite=${widget.morphologie}&age=${widget.age}&taille=${widget.taille}&poids=${widget.poidsActu}&poidsCible=${widget.poidsCible}&nbrSeance=${widget.nbr}&jourSeance=${widget.jours}&heureEntrainemenent=${selectedTime!.hour.toString().padLeft(2, '0')}:${selectedTime!.minute.toString().padLeft(2, '0')}&dateCible=${widget.dateCible}";
+    var url = "https://zoutechhub.com/pharmaRh/gofitnext/updateSeancePerso.php?id=$id&motivation=${widget.motivation}&sexe=${widget.sexe}&objectifPrincipal=${widget.objectif}&morphologieSouhaite=${widget.morphologie}&age=${widget.age}&taille=${widget.taille}&poids=${widget.poidsActu}&poidsCible=${widget.poidsCible}&nbrSeance=${widget.nbr}&jourSeance=${widget.jours}&heureEntrainemenent=${selectedTime!.hour.toString().padLeft(2, '0')}:${selectedTime!.minute.toString().padLeft(2, '0')}&dateCible=${widget.dateCible}";
     var response = await http.get(Uri.parse(url));
     print("*************************************response.body");
     print(response.body);

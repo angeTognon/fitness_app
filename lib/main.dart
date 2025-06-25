@@ -171,7 +171,7 @@ class _MyAppState extends State<MyApp> {
 
   getUserData() async {
     var url =
-        "https://zoutechhub.com/pharmaRh/fitness_app/getUserData.php?email=$user_email";
+        "https://zoutechhub.com/pharmaRh/gofitnext/getUserData.php?email=$user_email";
     var response = await http.get(Uri.parse(url));
     var pub = await json.decode(response.body);
     if (response.statusCode == 200) {

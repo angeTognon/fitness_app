@@ -50,7 +50,7 @@ class _PowerFitFormState extends State<PowerFitForm> {
 
     try {
       final response = await http.get(
-          Uri.parse('https://zoutechhub.com/pharmaRh/fitness_app/updateSeancePersoPowerFit.php')
+          Uri.parse('https://zoutechhub.com/pharmaRh/gofitnext/updateSeancePersoPowerFit.php')
               .replace(queryParameters: {
             'mail': user_email,
             'programme': selectedProgram ?? '',

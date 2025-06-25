@@ -9,9 +9,9 @@ class VideoPlayerScreen extends StatefulWidget {
 
 class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   final List<String> videoUrls = [
-    "https://zoutechhub.com/pharmaRh/fitness_app/videos/presentations/presentation.mp4",
-    "https://zoutechhub.com/pharmaRh/fitness_app/videos/presentations/presentation1.mp4",
-    "https://zoutechhub.com/pharmaRh/fitness_app/videos/presentations/presentation2.mp4",
+    "https://zoutechhub.com/pharmaRh/gofitnext/videos/presentations/presentation.mp4",
+    "https://zoutechhub.com/pharmaRh/gofitnext/videos/presentations/presentation1.mp4",
+    "https://zoutechhub.com/pharmaRh/gofitnext/videos/presentations/presentation2.mp4",
   ];
 
   late VideoPlayerController _videoPlayerController;
